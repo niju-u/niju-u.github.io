@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jestin Villegas — Web Developer</title>
+  <meta name="description" content="Jestin Villegas is a web developer in Cebu City building clean, responsive, user-friendly websites and Laravel web applications.">
+  <meta name="theme-color" content="#0b0a0f">
+  <meta property="og:title" content="Jestin Villegas — Web Developer">
+  <meta property="og:description" content="Frontend development, responsive websites and Laravel web applications.">
+  <meta property="og:type" content="website">
+  <!-- Live address: change these four URLs if the site is hosted somewhere else -->
+  <link rel="canonical" href="https://niju-u.github.io/">
+  <meta property="og:url" content="https://niju-u.github.io/">
+  <meta property="og:image" content="https://niju-u.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jestin Villegas — Web Developer, Frontend and Laravel">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://niju-u.github.io/assets/img/og-image.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm.5.5 8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8l-5-5Zm0 0v5h5M8.5 13h7M8.5 16.5h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h10v10H9zM5 15V5h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Zm0-9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  </svg>
+
+  <!-- Page loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__name">Jestin Villegas</span>
+      <span class="loader__count" data-loader-count>0</span>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <!-- Custom cursor (fine pointers only) -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><span class="cursor__label"></span></span></div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-nav>
+    <div class="nav__inner container">
+      <a href="#top" class="nav__logo" aria-label="Jestin Villegas, back to top">
+        <span class="nav__mark">JV</span><span class="nav__dot"></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about" data-nav-link><span>01</span>About</a>
+        <a href="#skills" data-nav-link><span>02</span>Skills</a>
+        <a href="#work" data-nav-link><span>03</span>Work</a>
+        <a href="#services" data-nav-link><span>04</span>Services</a>
+        <a href="#contact" data-nav-link><span>05</span>Contact</a>
+      </nav>
+
+      <a href="resume.html" class="nav__resume">Resume</a>
+      <a href="#contact" class="btn btn--small btn--ghost nav__cta" data-magnetic>Let's Talk</a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="mobile-menu" data-menu hidden>
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="#about"><span>01</span>About</a>
+      <a href="#skills"><span>02</span>Skills</a>
+      <a href="#work"><span>03</span>Work</a>
+      <a href="#services"><span>04</span>Services</a>
+      <a href="#contact"><span>05</span>Contact</a>
+      <a href="resume.html"><span>↗</span>Resume</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="mailto:jestinvillegas@gmail.com">jestinvillegas@gmail.com</a>
+      <span>Cebu City, PH</span>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__spot" data-spotlight></div>
+        <span class="orb orb--1" data-parallax="0.12"></span>
+        <span class="orb orb--2" data-parallax="-0.08"></span>
+        <span class="orb orb--3" data-parallax="0.2"></span>
+        <svg class="shape shape--ring" data-parallax="-0.18" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width=".5" stroke-dasharray="2 3"/></svg>
+        <svg class="shape shape--plus" data-parallax="0.25" viewBox="0 0 20 20"><path d="M10 0v20M0 10h20" stroke="currentColor" stroke-width="1"/></svg>
+        <svg class="shape shape--bracket" data-parallax="-0.3" viewBox="0 0 60 40"><path d="M18 4 4 20l14 16M42 4l14 16-14 16" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+      </div>
+
+      <div class="container hero__inner">
+        <p class="hero__intro eyebrow" data-hero-item>
+          <span class="status-dot"></span> Hi, I'm Jestin Villegas — Web Developer, Cebu City
+        </p>
+
+        <h1 class="hero__title" id="hero-title">
+          <span class="line"><span class="line__inner">I build <em>digital</em></span></span>
+          <span class="line"><span class="line__inner">experiences that</span></span>
+          <span class="line"><span class="line__inner">make an <em class="hero__accent">impact.</em></span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <p class="hero__desc" data-hero-item>
+            A web developer specializing in frontend development, responsive websites and
+            user-friendly interfaces — with 5+ years shipping production front ends and
+            Laravel applications for real clients.
+          </p>
+
+          <div class="hero__actions" data-hero-item>
+            <a href="#work" class="btn btn--primary" data-magnetic>
+              <span>View My Work</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost" data-magnetic>
+              <span>Let's Talk</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Rotating badge -->
+        <a href="#about" class="badge" aria-label="Scroll to About" data-hero-item data-cursor="Scroll">
+          <svg class="badge__text" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text textLength="482" lengthAdjust="spacing"><textPath href="#circle" textLength="482" lengthAdjust="spacing">Frontend · Laravel · Responsive · UI / UX · </textPath></text>
+          </svg>
+          <svg class="badge__icon icon" aria-hidden="true"><use href="#i-down"/></svg>
+        </a>
+      </div>
+
+      <div class="hero__meta container" data-hero-item>
+        <span>Frontend &amp; Laravel developer</span>
+        <span class="hero__meta-line"></span>
+        <span>Based in Cebu City, Philippines</span>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>HTML5</span><i>✦</i><span>Sass</span><i>✦</i><span>JavaScript</span><i>✦</i><span>Vue</span><i>✦</i><span>React</span><i>✦</i><span>PHP</span><i>✦</i><span>Laravel</span><i>✦</i><span>MySQL</span><i>✦</i><span>Tailwind CSS</span><i>✦</i><span>Figma</span><i>✦</i>
+        <span>HTML5</span><i>✦</i><span>Sass</span><i>✦</i><span>JavaScript</span><i>✦</i><span>Vue</span><i>✦</i><span>React</span><i>✦</i><span>PHP</span><i>✦</i><span>Laravel</span><i>✦</i><span>MySQL</span><i>✦</i><span>Tailwind CSS</span><i>✦</i><span>Figma</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">01</span>
+          <span class="section__label">About</span>
+          <span class="section__rule"></span>
+        </header>
+
+        <div class="about__grid">
+          <h2 class="about__statement" id="about-title" data-reveal>
+            I care about the space between <em>how it looks</em> and <em>how it works</em> —
+            and I build websites where both feel effortless.
+          </h2>
+
+          <div class="about__body">
+            <p data-reveal>
+              Based in Cebu City, I'm a web developer with more than five years of professional
+              experience. I spent five years as a frontend developer at HiPE, an offshore
+              development company in Cebu, building top pages and reusable UI components for
+              Bukkenking, a Japanese real estate client, and handling their requests under
+              tight deadlines.
+            </p>
+            <p data-reveal>
+              Today I design, build and maintain a live clinic management system as its sole
+              developer — from the interface staff use every day down to the
+              servers it runs on. That end-to-end ownership shapes how I work: clean code,
+              careful details, and interfaces people can use without a manual.
+            </p>
+
+            <dl class="stats" data-reveal>
+              <div class="stat">
+                <dt>Years building for the web</dt>
+                <dd><span data-count="5">5</span><sup>+</sup></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <ol class="principles">
+          <li class="principle" data-reveal>
+            <span class="principle__num">i.</span>
+            <h3>Clean &amp; functional</h3>
+            <p>Semantic markup, reusable components and code that the next developer — often future me — can read and extend.</p>
+          </li>
+          <li class="principle" data-reveal>
+            <span class="principle__num">ii.</span>
+            <h3>Responsive by default</h3>
+            <p>Every layout is built to hold up from a small phone to a wide desktop, not patched together afterwards.</p>
+          </li>
+          <li class="principle" data-reveal>
+            <span class="principle__num">iii.</span>
+            <h3>Detail-obsessed UX</h3>
+            <p>Spacing, states, feedback and timing. The small details are what make an interface feel trustworthy.</p>
+          </li>
+        </ol>
+
+        <!-- Experience timeline -->
+        <div class="journey" data-reveal>
+          <h3 class="journey__title">Experience</h3>
+          <ol class="journey__list">
+            <li class="journey__item">
+              <span class="journey__date">Jul 2026 — Present</span>
+              <div>
+                <h4>Freelance Web Developer &amp; IT Support</h4>
+                <p class="journey__org">Sandbox Clinic · Cebu City</p>
+              </div>
+              <p class="journey__desc">Built and maintain a live clinic management system — records, appointments, intake forms, role-based access, servers and deployments.</p>
+            </li>
+            <li class="journey__item">
+              <span class="journey__date">Apr 2021 — Jul 2026</span>
+              <div>
+                <h4>Frontend Developer</h4>
+                <p class="journey__org">HiPE Inc. · Cebu City</p>
+              </div>
+              <p class="journey__desc">Developed and maintained the front end of the real estate sales website for Bukkenking, a Japanese client, as part of a development team.</p>
+            </li>
+            <li class="journey__item">
+              <span class="journey__date">Graduated Apr 2021</span>
+              <div>
+                <h4>BS Information Technology</h4>
+                <p class="journey__org">University of Cebu</p>
+              </div>
+              <p class="journey__desc">Foundation in software development, databases and systems.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">02</span>
+          <span class="section__label">Skills &amp; Technologies</span>
+          <span class="section__rule"></span>
+        </header>
+
+        <div class="skills__intro">
+          <h2 class="display" id="skills-title" data-reveal>A periodic table <br>of my <em>toolkit.</em></h2>
+          <p data-reveal>The elements I combine to build fast, accessible and maintainable websites. Hover an element to see where it fits in my workflow.</p>
+        </div>
+
+        <div class="skills__legend" data-reveal role="group" aria-label="Filter by category">
+          <button type="button" class="chip is-active" data-filter="all">All</button>
+          <button type="button" class="chip" data-filter="front"><i class="cat cat--front"></i>Frontend</button>
+          <button type="button" class="chip" data-filter="back"><i class="cat cat--back"></i>Backend &amp; Data</button>
+          <button type="button" class="chip" data-filter="tool"><i class="cat cat--tool"></i>Tools &amp; Design</button>
+        </div>
+
+        <ul class="elements" data-reveal-group>
+          <li class="el" data-cat="front" data-tilt>
+            <span class="el__n">01</span><span class="el__sym">Ht</span><span class="el__name">HTML5</span>
+            <span class="el__note">Semantic, accessible markup</span>
+          </li>
+          <li class="el" data-cat="front" data-tilt>
+            <span class="el__n">02</span><span class="el__sym">Cs</span><span class="el__name">CSS3</span>
+            <span class="el__note">Layout, Grid, Flexbox, motion</span>
+          </li>
+          <li class="el" data-cat="front" data-tilt>
+            <span class="el__n">03</span><span class="el__sym">Sa</span><span class="el__name">SCSS / Sass</span>
+            <span class="el__note">Scalable, modular styles</span>
+          </li>
+          <li class="el" data-cat="front" data-tilt>
+            <span class="el__n">04</span><span class="el__sym">Js</span><span class="el__name">JavaScript</span>
+            <span class="el__note">Interactions &amp; DOM logic</span>
+          </li>
+          <li class="el" data-cat="front" data-tilt>
+            <span class="el__n">05</span><span class="el__sym">Vu</span><span class="el__name">Vue</span>
+            <span class="el__note">Component-based UI</span>
+          </li>
+          <li class="el" data-cat="front" data-tilt>
+            <span class="el__n">06</span><span class="el__sym">Re</span><span class="el__name">React</span>
+            <span class="el__note">Reusable UI components</span>
+          </li>
+          <li class="el" data-cat="front" data-tilt>
+            <span class="el__n">07</span><span class="el__sym">Jq</span><span class="el__name">jQuery</span>
+            <span class="el__note">Maintaining legacy front ends</span>
+          </li>
+          <li class="el" data-cat="front" data-tilt>
+            <span class="el__n">08</span><span class="el__sym">Tw</span><span class="el__name">Tailwind CSS</span>
+            <span class="el__note">Utility-first styling</span>
+          </li>
+          <li class="el" data-cat="front" data-tilt>
+            <span class="el__n">09</span><span class="el__sym">Bs</span><span class="el__name">Bootstrap</span>
+            <span class="el__note">Rapid responsive layouts</span>
+          </li>
+          <li class="el" data-cat="front" data-tilt>
+            <span class="el__n">10</span><span class="el__sym">Rw</span><span class="el__name">Responsive Design</span>
+            <span class="el__note">Mobile-first, every screen</span>
+          </li>
+          <li class="el" data-cat="back" data-tilt>
+            <span class="el__n">11</span><span class="el__sym">Ph</span><span class="el__name">PHP</span>
+            <span class="el__note">Server-side logic</span>
+          </li>
+          <li class="el" data-cat="back" data-tilt>
+            <span class="el__n">12</span><span class="el__sym">Lv</span><span class="el__name">Laravel</span>
+            <span class="el__note">Full web applications, Blade</span>
+          </li>
+          <li class="el" data-cat="back" data-tilt>
+            <span class="el__n">13</span><span class="el__sym">My</span><span class="el__name">MySQL</span>
+            <span class="el__note">Relational data design</span>
+          </li>
+          <li class="el" data-cat="back" data-tilt>
+            <span class="el__n">14</span><span class="el__sym">Pg</span><span class="el__name">PostgreSQL</span>
+            <span class="el__note">Production databases</span>
+          </li>
+          <li class="el" data-cat="back" data-tilt>
+            <span class="el__n">15</span><span class="el__sym">Nx</span><span class="el__name">nginx &amp; Linux</span>
+            <span class="el__note">Servers &amp; deployments</span>
+          </li>
+          <li class="el" data-cat="tool" data-tilt>
+            <span class="el__n">16</span><span class="el__sym">Gt</span><span class="el__name">Git / GitHub</span>
+            <span class="el__note">Version control &amp; teamwork</span>
+          </li>
+          <li class="el" data-cat="tool" data-tilt>
+            <span class="el__n">17</span><span class="el__sym">Fg</span><span class="el__name">Figma</span>
+            <span class="el__note">Design to code handoff</span>
+          </li>
+          <li class="el" data-cat="tool" data-tilt>
+            <span class="el__n">18</span><span class="el__sym">Do</span><span class="el__name">DigitalOcean</span>
+            <span class="el__note">Cloud hosting</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">03</span>
+          <span class="section__label">Selected Work</span>
+          <span class="section__rule"></span>
+        </header>
+
+        <div class="work__intro">
+          <h2 class="display" id="work-title" data-reveal>Case <em>studies.</em></h2>
+          <p data-reveal>Each project below walks through what was built, the problem behind it, what I personally contributed and where it landed.</p>
+        </div>
+
+        <!--
+          HOW TO EDIT A PROJECT
+          - Replace the image src with a real screenshot (1600×1000, .webp or .jpg, under ~250KB).
+          - Replace any text in [square brackets] with your own details.
+          - For links: set the real URL and remove the "is-disabled" class + aria-disabled attribute.
+        -->
+
+        <!-- Project 01 -->
+        <article class="case" data-reveal>
+          <a class="case__media" href="#case-emr" data-cursor="Read" aria-label="Read the Sandbox Clinic case study">
+            <div class="case__frame case__frame--wide" data-parallax-img>
+              <img src="assets/img/project-sandbox.webp" alt="Sandbox Clinic website homepage with the headline 'A Multi-specialty Clinic right at the Heart of Cebu' beside a photo of the clinic reception" width="1902" height="1002" loading="lazy" decoding="async">
+            </div>
+            <span class="case__index">01</span>
+          </a>
+
+          <div class="case__body" id="case-emr">
+            <div class="case__top">
+              <span class="case__tag">Web Application · 2026 — Present</span>
+              <h3 class="case__title">Sandbox Clinic</h3>
+              <p class="case__client">Sandbox Clinic, Cebu City · Sole developer</p>
+            </div>
+
+            <dl class="case__study">
+              <div><dt>The Project</dt><dd>A live, web-based clinic management system covering patient records, appointments and intake forms — used daily by clinic staff and patients.</dd></div>
+              <div><dt>The Challenge</dt><dd>Six different user types — Admin, Manager, Front Desk, Therapist, Doctor and Patient — needed one system, while sensitive patient information had to stay restricted by role.</dd></div>
+              <div><dt>My Contribution</dt><dd>Built and maintain the whole application: role-based access, activity logs, account lockout after repeated failed logins, auto-logout after 20 minutes of inactivity, plus production and staging servers, automatic deployments and cloud file storage.</dd></div>
+              <div><dt>The Result</dt><dd>The system is live and in daily use by the clinic's staff and patients.</dd></div>
+            </dl>
+
+            <ul class="tags" aria-label="Technologies used">
+              <li>Laravel</li><li>PHP</li><li>PostgreSQL / MySQL</li><li>JavaScript</li><li>nginx</li><li>DigitalOcean</li><li>Google Cloud Storage</li>
+            </ul>
+
+            <div class="case__links">
+              <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Private system — add a demo link if available">
+                Live site <span class="muted">(private)</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+              <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Add a GitHub link if available">
+                GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="case case--flip" data-reveal>
+          <!-- case__row keeps the sticky preview inside this row, so it stops before the client sites -->
+          <div class="case__row">
+          <a class="case__media" href="#case-bukkenking" data-cursor="Read" aria-label="Read the Bukkenking case study">
+            <div class="case__frame case__frame--panorama" data-parallax-img>
+              <img src="assets/img/project-bukkenking.webp" alt="Bukkenking (物件王) website homepage: a teal hero with the headline 建築会社が始める不動産, 'Building Companies Starting Real Estate'" width="1889" height="851" loading="lazy" decoding="async">
+            </div>
+            <figure class="case__inset">
+              <div class="case__inset-img">
+                <img src="assets/img/hipe-banner.webp" alt="HiPE Inc. banner: Your offshore development experts, supporting lab-type IT product development in Cebu and Manila" width="956" height="484" loading="lazy" decoding="async">
+              </div>
+              <figcaption>Built at HiPE Inc.</figcaption>
+            </figure>
+            <span class="case__index">02</span>
+          </a>
+
+          <div class="case__body" id="case-bukkenking">
+            <div class="case__top">
+              <span class="case__tag">Real Estate Platform · 2021 — 2026</span>
+              <h3 class="case__title">Bukkenking</h3>
+              <p class="case__client">Client: Bukkenking (Japan) · Built at HiPE Inc. · Frontend Developer, team project</p>
+            </div>
+
+            <dl class="case__study">
+              <div><dt>The Project</dt><dd>The front end of a real estate sales website for Bukkenking, a client in Japan, developed and maintained as part of HiPE's development team.</dd></div>
+              <div><dt>The Challenge</dt><dd>A steady stream of change requests and reported issues from the client in Japan — bug fixes, design updates, new pages and performance work — all delivered under tight deadlines.</dd></div>
+              <div><dt>My Contribution</dt><dd>Built top pages and reusable UI components from the early stages of the project, handled client change requests end to end, and supported backend tasks in PHP, Laravel and MySQL when assigned. For the real estate companies whose sites run on Bukkenking, I design the top page and lower pages and handle maintenance based on each client's orders.</dd></div>
+              <div><dt>The Result</dt><dd>Assigned work consistently shipped on schedule over five years, across many live client sites — three of them are shown below.</dd></div>
+            </dl>
+
+            <ul class="tags" aria-label="Technologies used">
+              <li>HTML</li><li>Sass</li><li>JavaScript</li><li>jQuery</li><li>Vue</li><li>React</li><li>PHP / Laravel</li><li>Git</li>
+            </ul>
+
+            <div class="case__links">
+              <a class="link-arrow" href="#bukkenking-sites">
+                See live client sites <svg class="icon" aria-hidden="true" style="transform: rotate(90deg)"><use href="#i-arrow"/></svg>
+              </a>
+              <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Client project — no public repository">
+                GitHub <span class="muted">(private)</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </div>
+          </div><!-- /case__row -->
+
+          <!-- Client sites on the Bukkenking platform. Add or swap cards here (thumbnail: 1200×750 .webp). -->
+          <div class="case__sites" id="bukkenking-sites">
+            <div class="case__sites-head">
+              <h4 class="case__sites-title">Client sites on <em>Bukkenking</em></h4>
+              <p>Three examples from the many client sites I've managed: top page and lower page design, plus ongoing maintenance based on each client's orders.</p>
+            </div>
+            <ul class="sites">
+              <li>
+                <a class="site" href="https://www.soratoti.com/" target="_blank" rel="noopener" data-cursor="Visit">
+                  <div class="site__img"><img src="assets/img/client-soratoti.webp" alt="Soratoti homepage: 'Home with life.' over a photo of central Yokkaichi" width="1200" height="750" loading="lazy" decoding="async"></div>
+                  <div class="site__meta">
+                    <span class="site__name">Soratoti <span lang="ja">ソラトチ</span></span>
+                    <span class="site__loc">Yokkaichi, Mie</span>
+                  </div>
+                  <svg class="site__arrow icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="site" href="https://www.okaken-fudousan.com/" target="_blank" rel="noopener" data-cursor="Visit">
+                  <div class="site__img"><img src="assets/img/client-okaken.webp" alt="Okaken Home homepage: a pink header and a family sitting on a sofa" width="1200" height="750" loading="lazy" decoding="async"></div>
+                  <div class="site__meta">
+                    <span class="site__name">Okaken Home <span lang="ja">おかけんホーム</span></span>
+                    <span class="site__loc">Hikone, Shiga</span>
+                  </div>
+                  <svg class="site__arrow icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="site" href="https://www.eh-iwakiminami-f.com/" target="_blank" rel="noopener" data-cursor="Visit">
+                  <div class="site__img"><img src="assets/img/client-iwakiminami.webp" alt="Endure Home Iwaki Minami homepage: a coastal photo with an area map showing listings per city" width="1200" height="750" loading="lazy" decoding="async"></div>
+                  <div class="site__meta">
+                    <span class="site__name">Endure Home Iwaki Minami <span lang="ja">インデュアホームいわき南</span></span>
+                    <span class="site__loc">Iwaki, Kitaibaraki &amp; Takahagi</span>
+                  </div>
+                  <svg class="site__arrow icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="case" data-reveal>
+          <a class="case__media" href="#case-pikolq" data-cursor="Read" aria-label="Read the Pickle sa Balay case study">
+            <div class="case__frame" data-parallax-img>
+              <img src="assets/img/project-pikolq.webp" alt="Pickle sa Balay homepage: the headline 'Pick your slot. Hit the spot.' with Book a Court and Find My Booking buttons beside a cartoon puppy holding a pickleball paddle" width="1600" height="1000" loading="lazy" decoding="async">
+            </div>
+            <span class="case__index">03</span>
+          </a>
+
+          <div class="case__body" id="case-pikolq">
+            <div class="case__top">
+              <span class="case__tag">Booking System · <span class="status-pill">In development</span></span>
+              <h3 class="case__title">Pickle sa Balay</h3>
+              <p class="case__client">Pickleball court booking · Design &amp; development</p>
+            </div>
+
+            <dl class="case__study">
+              <div><dt>The Project</dt><dd>An online booking system for a private pickleball court. Players pick a time, book a slot and pay in a few steps — no account required — while staff run courts, schedules, bookings and payments from an admin panel.</dd></div>
+              <div><dt>The Challenge</dt><dd>Two people must never land the same slot, and availability has to respect operating hours, blocked dates, maintenance windows and slots held mid-checkout — without making booking feel slow.</dd></div>
+              <div><dt>My Contribution</dt><dd>Built a step-by-step booking flow backed by a live availability API; an availability rule pipeline; a double-booking guard using database row locks; a payment layer with a PayMongo driver and duplicate-safe webhooks; and an admin panel with day/week/month calendars, maintenance, refunds, reports, audit log and Admin / Manager / Customer roles.</dd></div>
+              <div><dt>The Result</dt><dd>Still in development. The booking, payment and admin flows already work end to end and are covered by 40 automated test files.</dd></div>
+            </dl>
+
+            <ul class="tags" aria-label="Technologies used">
+              <li>Laravel 13</li><li>PHP</li><li>MySQL</li><li>Blade</li><li>Sass</li><li>JavaScript</li><li>Vite</li><li>PayMongo</li><li>Pest</li>
+            </ul>
+
+            <div class="case__links">
+              <!-- TODO: add the live URL once deployed -->
+              <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Add the live link once deployed">Live site <span class="muted">(in development)</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Add a GitHub link if the repository is public">GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">04</span>
+          <span class="section__label">What I Do</span>
+          <span class="section__rule"></span>
+        </header>
+
+        <div class="services__intro">
+          <h2 class="display" id="services-title" data-reveal>From first pixel <br>to <em>production server.</em></h2>
+        </div>
+
+        <ul class="services__list">
+          <li class="service" data-reveal>
+            <span class="service__num">01</span>
+            <h3 class="service__title">Frontend Development</h3>
+            <p class="service__desc">Fast, accessible interfaces with HTML, Sass and JavaScript, plus Vue or React where components pay off.</p>
+            <svg class="service__arrow icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">02</span>
+            <h3 class="service__title">Responsive Web Design</h3>
+            <p class="service__desc">Layouts that adapt cleanly from phones to wide screens, with readable type and touch-friendly controls.</p>
+            <svg class="service__arrow icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">03</span>
+            <h3 class="service__title">UI Implementation</h3>
+            <p class="service__desc">Turning Figma designs into pixel-careful, reusable components — including the hover, focus and empty states.</p>
+            <svg class="service__arrow icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">04</span>
+            <h3 class="service__title">Laravel Web Applications</h3>
+            <p class="service__desc">Full applications with Laravel and Blade: authentication, role-based access, forms, dashboards and data.</p>
+            <svg class="service__arrow icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">05</span>
+            <h3 class="service__title">Backend Integration</h3>
+            <p class="service__desc">Connecting front ends to PHP, MySQL and PostgreSQL back ends, APIs and cloud file storage.</p>
+            <svg class="service__arrow icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">06</span>
+            <h3 class="service__title">Website Maintenance</h3>
+            <p class="service__desc">Bug fixes, updates, performance work, server care and deployments — keeping live sites healthy.</p>
+            <svg class="service__arrow icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">05</span>
+          <span class="section__label">Contact</span>
+          <span class="section__rule"></span>
+        </header>
+
+        <p class="contact__kicker" data-reveal>Have a project in mind? I'd love to hear about it.</p>
+
+        <h2 class="contact__title" id="contact-title" data-reveal-lines>
+          <span class="line"><span class="line__inner">Let's work</span></span>
+          <span class="line"><span class="line__inner"><em>together.</em></span></span>
+        </h2>
+
+        <div class="contact__grid">
+          <div class="contact__email" data-reveal>
+            <span class="contact__label">Email</span>
+            <div class="contact__email-row">
+              <a href="mailto:jestinvillegas@gmail.com" class="contact__email-link" data-cursor="Write">jestinvillegas@gmail.com</a>
+              <button type="button" class="icon-btn" data-copy="jestinvillegas@gmail.com" aria-label="Copy email address">
+                <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+              </button>
+              <span class="copy-toast" role="status" aria-live="polite"></span>
+            </div>
+            <a href="mailto:jestinvillegas@gmail.com?subject=Project%20inquiry" class="btn btn--primary btn--large" data-magnetic>
+              <span>Let's Work Together</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+
+          <div class="contact__side" data-reveal>
+            <span class="contact__label">Elsewhere</span>
+            <ul class="socials">
+              <li><a href="https://github.com/niju-u" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a href="https://www.linkedin.com/in/jestin-villegas-076930408/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a href="mailto:jestinvillegas@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a href="resume.html"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg>Resume<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a href="assets/Jestin-Villegas-Resume.pdf" download><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Download resume (PDF)<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            </ul>
+
+            <div class="contact__meta">
+              <p><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Cebu City, Philippines</p>
+              <p>Local time <strong data-clock>--:--</strong> <span class="muted">(GMT+8)</span></p>
+              <p>Languages: English, Filipino, Cebuano</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span data-year>2026</span> Jestin Villegas</span>
+      <span class="footer__mid">Designed &amp; built by hand — no templates.</span>
+      <a href="#top" class="footer__top">Back to top <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=4" defer></script>
+</body>
+</html>
