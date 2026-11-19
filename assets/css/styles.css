@@ -935,16 +935,15 @@ em { font-family: var(--font-serif); font-style: italic; font-weight: 400; lette
 .case__inset-img {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 940 / 350; /* banner area only, hides the profile row below it */
+  aspect-ratio: 1280 / 648;
   border-radius: var(--radius);
   box-shadow: 0 30px 60px -20px rgba(0,0,0,.9), 0 0 0 1px var(--line-strong);
 }
 .case__inset-img img {
-  position: absolute;
-  top: 0;
-  left: -0.43%;
-  width: 101.7%;
-  max-width: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 .case__inset figcaption {
   margin-top: 10px;
