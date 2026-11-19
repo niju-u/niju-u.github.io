@@ -1109,6 +1109,54 @@ em { font-family: var(--font-serif); font-style: italic; font-weight: 400; lette
 .case__links { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 28px; }
 .case--placeholder .case__body { opacity: 0.75; }
 
+/* small projects: compact cards after the case studies */
+.minis {
+  margin-top: clamp(48px, 6vw, 88px);
+  padding-top: clamp(28px, 3vw, 40px);
+  border-top: 1px solid var(--line);
+}
+.minis__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: clamp(28px, 3vw, 40px);
+}
+.mini { display: grid; align-content: start; gap: 20px; }
+.mini__img {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 0 0 1px var(--line);
+}
+.mini__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 1s var(--ease-out), filter .6s;
+  filter: saturate(.85) brightness(.92);
+}
+.mini__img:hover img { transform: scale(1.05); filter: none; }
+.mini__title {
+  margin-top: 8px;
+  font-size: clamp(1.3rem, 1.1rem + .6vw, 1.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+.mini__desc { margin-top: 10px; color: var(--text-2); font-size: 0.95rem; }
+.mini .tags { margin-top: 18px; }
+.mini .case__links { margin-top: 20px; }
+/* a lone card sits image-beside-text instead of leaving the row half empty */
+@media (min-width: 760px) {
+  .mini:only-child {
+    grid-column: 1 / -1;
+    grid-template-columns: 1.1fr 1fr;
+    gap: clamp(28px, 4vw, 56px);
+    align-items: start;
+  }
+}
+
 /* ---------- Services ---------- */
 .services__intro { margin-bottom: clamp(40px, 6vw, 72px); }
 .services__list { border-bottom: 1px solid var(--line); }
