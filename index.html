@@ -174,10 +174,22 @@
         </header>
 
         <div class="about__grid">
-          <h2 class="about__statement" id="about-title" data-reveal>
-            I care about the space between <em>how it looks</em> and <em>how it works</em> —
-            and I build websites where both feel effortless.
-          </h2>
+          <div class="about__lead">
+            <h2 class="about__statement" id="about-title" data-reveal>
+              I care about the space between <em>how it looks</em> and <em>how it works</em> —
+              and I build websites where both feel effortless.
+            </h2>
+
+            <!-- Portrait hidden for now. Uncomment to show it again (styles: .about__photo in styles.css).
+            <figure class="about__photo" data-reveal>
+              <div class="about__photo-frame">
+                <img src="assets/img/portrait.webp" alt="Jestin Villegas smiling in glasses, wearing a black shirt and a red backpack strap, outdoors in Cebu City" width="800" height="1000" loading="lazy" decoding="async">
+              </div>
+              <figcaption>Hi, that's me · Cebu City</figcaption>
+            </figure>
+            -->
+
+          </div>
 
           <div class="about__body">
             <p data-reveal>
@@ -404,9 +416,6 @@
               <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Private system — add a demo link if available">
                 Live site <span class="muted">(private)</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
               </a>
-              <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Add a GitHub link if available">
-                GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
-              </a>
             </div>
           </div>
         </article>
@@ -449,9 +458,6 @@
             <div class="case__links">
               <a class="link-arrow" href="#bukkenking-sites">
                 See live client sites <svg class="icon" aria-hidden="true" style="transform: rotate(90deg)"><use href="#i-arrow"/></svg>
-              </a>
-              <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Client project — no public repository">
-                GitHub <span class="muted">(private)</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
               </a>
             </div>
           </div>
@@ -500,66 +506,91 @@
 
         <!-- Project 03 -->
         <article class="case" data-reveal>
+          <!-- case__row keeps the sticky preview inside this row, so it stops before the related projects -->
+          <div class="case__row">
           <a class="case__media" href="#case-pikolq" data-cursor="Read" aria-label="Read the Pickle sa Balay case study">
             <div class="case__frame" data-parallax-img>
-              <img src="assets/img/project-pikolq.webp" alt="Pickle sa Balay homepage: the headline 'Pick your slot. Hit the spot.' with Book a Court and Find My Booking buttons beside a cartoon puppy holding a pickleball paddle" width="1600" height="1000" loading="lazy" decoding="async">
+              <img src="assets/img/project-pikolq.webp?v=3" alt="Pickle sa Balay homepage: the pixel-art headline 'Find your court. Play tonight.' with See Schedule and Court Info buttons beside a pixel calendar, above hours, court rates and contact cards" width="1600" height="1000" loading="lazy" decoding="async">
             </div>
+            <figure class="case__inset">
+              <div class="case__inset-img">
+                <img src="assets/img/pikolq-schedule.webp?v=3" alt="Pickle sa Balay schedule page: a month calendar beside an hour-by-hour grid for Courts 1 to 3, with open slots in green and Court 1 marked 'Painting in progress'" width="1280" height="648" loading="lazy" decoding="async">
+              </div>
+              <figcaption>Live court schedule</figcaption>
+            </figure>
             <span class="case__index">03</span>
           </a>
 
           <div class="case__body" id="case-pikolq">
             <div class="case__top">
-              <span class="case__tag">Booking System · <span class="status-pill">In development</span></span>
+              <span class="case__tag">Court Schedule &amp; Booking · 2026</span>
               <h3 class="case__title">Pickle sa Balay</h3>
-              <p class="case__client">Pickleball court booking · Design &amp; development</p>
+              <p class="case__client">Pickleball court venue · Design &amp; development</p>
             </div>
 
             <dl class="case__study">
-              <div><dt>The Project</dt><dd>An online booking system for a private pickleball court. Players pick a time, book a slot and pay in a few steps — no account required — while staff run courts, schedules, bookings and payments from an admin panel.</dd></div>
-              <div><dt>The Challenge</dt><dd>Two people must never land the same slot, and availability has to respect operating hours, blocked dates, maintenance windows and slots held mid-checkout — without making booking feel slow.</dd></div>
-              <div><dt>My Contribution</dt><dd>Built a step-by-step booking flow backed by a live availability API; an availability rule pipeline; a double-booking guard using database row locks; a payment layer with a PayMongo driver and duplicate-safe webhooks; and an admin panel with day/week/month calendars, maintenance, refunds, reports, audit log and Admin / Manager / Customer roles.</dd></div>
-              <div><dt>The Result</dt><dd>Still in development. The booking, payment and admin flows already work end to end and are covered by 40 automated test files.</dd></div>
+              <div><dt>The Project</dt><dd>The website for Pickle sa Balay, a three-court pickleball venue open 4 PM to 4 AM. Players see which courts are free hour by hour before heading over, then book and pay online in a few taps — no account needed — while the front desk runs the schedule from a staff login.</dd></div>
+              <div><dt>The Challenge</dt><dd>The schedule has to be right the moment it changes: what players see must match the front desk, two people can't grab the same slot, and late-night hours after midnight still belong to the same day's schedule. Courts also go out for maintenance or open play, and payment runs through GCash rather than a card checkout.</dd></div>
+              <div><dt>My Contribution</dt><dd>Designed and built the whole site: a pixel-art look shared with the club's other tools; a month calendar and an hour-by-hour grid per court that updates live as staff make changes; online booking where players pick several open slots, which are held on a countdown while they pay by GCash and submit the reference number and a receipt screenshot for staff to verify; courts marked unavailable with a reason or set aside for open play; and a staff login for managing bookings.</dd></div>
+              <div><dt>The Result</dt><dd>Live: players can check open courts and book from their phones, and the site links straight to the club's open play queue and tournament brackets.</dd></div>
             </dl>
 
             <ul class="tags" aria-label="Technologies used">
-              <li>Laravel 13</li><li>PHP</li><li>MySQL</li><li>Blade</li><li>Sass</li><li>JavaScript</li><li>Vite</li><li>PayMongo</li><li>Pest</li>
+              <li>JavaScript</li><li>HTML</li><li>CSS</li><li>Supabase</li><li>PostgreSQL</li><li>Supabase Realtime</li><li>Cloudflare Pages</li>
             </ul>
 
             <div class="case__links">
-              <!-- TODO: add the live URL once deployed -->
-              <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Add the live link once deployed">Live site <span class="muted">(in development)</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Add a GitHub link if the repository is public">GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="https://schedule-psb.pages.dev/" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="#pikolq-projects">
+                See related projects <svg class="icon" aria-hidden="true" style="transform: rotate(90deg)"><use href="#i-arrow"/></svg>
+              </a>
             </div>
           </div>
-        </article>
+          </div><!-- /case__row -->
 
-        <!-- Small projects: compact cards under the case studies (thumbnail: 1200×750 .webp) -->
-        <div class="minis" id="small-projects">
-          <div class="case__sites-head" data-reveal>
-            <h3 class="case__sites-title">Small <em>projects</em></h3>
-            <p>Smaller tools built for real use: quick to ship, but held to the same standard as the bigger work.</p>
-          </div>
+          <!-- Projects built alongside Pickle sa Balay. Add or swap cards here (thumbnail: 1200×750 .webp). -->
+          <div class="case__sites" id="pikolq-projects">
+            <div class="case__sites-head">
+              <h4 class="case__sites-title">Built for <em>Pickle sa Balay</em></h4>
+              <p>Companion tools for open play and tournaments, sponsored by Pickle sa Balay and linked from its site.</p>
+            </div>
 
           <ul class="minis__list">
-            <li class="mini" data-reveal>
+            <li class="mini">
               <a class="mini__img" href="https://pikolq.run.place/" target="_blank" rel="noopener" data-cursor="Visit" aria-label="Open the Pickleball Open Play Queue in a new tab">
-                <img src="assets/img/project-openplay.webp" alt="Pickleball Open Play setup screen: session name, player and court steppers, a doubles or singles toggle and a grid of player name fields" width="1200" height="750" loading="lazy" decoding="async">
+                <img src="assets/img/project-openplay.webp?v=2" alt="Pickleball Open Play homepage: the pixel-art headline 'Fair games for every player.' with a Set Up a Session button beside a pixel court and player queue, above the session setup and player name fields" width="1200" height="750" loading="lazy" decoding="async">
               </a>
               <div class="mini__body">
                 <span class="case__tag">Queueing Web App · 2026</span>
                 <h4 class="mini__title">Pickleball Open Play Queue</h4>
-                <p class="mini__desc">An open play queue for pickleball clubs, sponsored by Pickle sa Balay. Enter the players and courts and it decides who plays next: fewest games first, mixed-up partners and opponents, and nobody stuck sitting out or playing back to back. It also records scores and player stats, announces winners and the next match by voice, runs several sessions at once and exports match history as a PDF.</p>
+                <p class="mini__desc">An open play queue for pickleball clubs, sponsored by Pickle sa Balay. Enter the players and courts and it decides who plays next: fewest games first, mixed-up partners and opponents, and nobody stuck sitting out or playing back to back. It also records scores and player stats, announces winners and the next match by voice, runs several sessions at once and exports match history as a PDF. A session can be shared with a short code and passcode, so it can be opened on another device.</p>
                 <ul class="tags" aria-label="Technologies used">
-                  <li>JavaScript</li><li>HTML</li><li>CSS</li><li>localStorage</li><li>Web Speech API</li><li>jsPDF</li><li>PWA</li>
+                  <li>JavaScript</li><li>HTML</li><li>CSS</li><li>localStorage</li><li>Supabase</li><li>Web Speech API</li><li>jsPDF</li><li>PWA</li>
                 </ul>
                 <div class="case__links">
                   <a class="link-arrow" href="https://pikolq.run.place/" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                  <a class="link-arrow is-disabled" href="#" aria-disabled="true" title="Add a GitHub link if the repository is public">GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </div>
+              </div>
+            </li>
+            <li class="mini">
+              <a class="mini__img" href="https://tournament.pikolq.run.place/" target="_blank" rel="noopener" data-cursor="Visit" aria-label="Open Pickleball Tournaments in a new tab">
+                <img src="assets/img/project-tournament.webp?v=2" alt="Pickleball Tournaments homepage: the pixel-art headline 'From first serve to champion.' with a Create Tournament button beside a pixel court and trophy, above total, upcoming, ongoing and completed counters" width="1200" height="750" loading="lazy" decoding="async">
+              </a>
+              <div class="mini__body">
+                <span class="case__tag">Tournament Web App · 2026</span>
+                <h4 class="mini__title">Pickleball Tournaments</h4>
+                <p class="mini__desc">A bracket manager for pickleball tournaments, sponsored by Pickle sa Balay. Set up singles or doubles events in single elimination, double elimination or round robin with optional playoffs, add entrants with seeding and automatic byes, then record match scores as winners advance through the bracket to a champion. Runs in the browser with a pixel-art look and links back to the open play queue.</p>
+                <ul class="tags" aria-label="Technologies used">
+                  <li>JavaScript</li><li>HTML</li><li>CSS</li><li>localStorage</li><li>PWA</li>
+                </ul>
+                <div class="case__links">
+                  <a class="link-arrow" href="https://tournament.pikolq.run.place/" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
                 </div>
               </div>
             </li>
           </ul>
-        </div>
+          </div>
+        </article>
       </div>
     </section>
 
